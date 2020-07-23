@@ -60,12 +60,56 @@ header {
 
 #ourChef {
     background-color: black;
-    height: 300px;
+    height: 1000vh;
     #chef {
         display: flex;
         justify-content: space-between;
         background: none;
+        img {
+            border-bottom: 1px solid white;
+        }
+        p {
+            text-align: center;
+            color: white;
+        }
     }
 }
 
+/* CLIENT */
+
+
+.client {
+    background-image: url(../../../public/images/testimonials_background.jpg);
+    width: cover;
+    height: 60vh;
+    /* background-attachment: fixed;
+    background-repeat: no-repeat; */
+}
+
+.titleClient {
+    padding-top: 4em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.testimonial1 {
+    border-radius: 50%;
+    width: 150px;
+    border: 3px solid white;
+}
+
+/* CONTACT */
+
+.ourContact {
+    background-image: url(../../../public/images/main_bg.jpg);
+    padding-bottom: 2em;
+}
+
+#ourContactCard {
+    i, p {
+       text-align: center; 
+    }
+    p {
+        border-bottom: 1px solid white;
+    }
+}
 
