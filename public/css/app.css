@@ -9665,7 +9665,17 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-header {
-  background-image: url(../../../public/images/banner1.jpg);
-  height: 200px;
+section {
+  background-image: url(../../../public/images/main_bg.jpg);
+  height: 500px;
+}
+
+header .banner {
+  filter: brightness(40%);
+  width: cover;
+  position: relative;
+}
+
+header nav {
+  position: absolute;
 }

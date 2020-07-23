@@ -1,4 +1,15 @@
+section {
+    background-image: url(../../../public/images/main_bg.jpg);
+    height: 500px;
+}
+
 header {
-    background-image: url(../../../public/images/banner1.jpg);
-    height: 200px;
+    .banner {
+        filter: brightness(40%);
+        width: cover;
+        position: relative;
+    }
+    nav {
+        position: absolute;
+    }
 }
