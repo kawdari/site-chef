@@ -9666,6 +9666,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Courgette', cursive;
 }
@@ -9775,6 +9779,12 @@ header .carousel-indicators li {
   box-shadow: 5px 10px;
 }
 
+.deco {
+  background-image: url(../../../public/images/bottom_decoration_img.png);
+  background-color: black;
+  height: 10px;
+}
+
 /* menu */
 #menu {
   background-image: url(../../../public/images/main_bg.jpg);
@@ -9804,11 +9814,11 @@ header .carousel-indicators li {
   margin-top: 20px;
 }
 
-#v-pills-home-tab:hover {
+#v-pills-home-tab:focus {
   border-right: #dd003f 4px solid;
 }
 
-#v-pills-home-tab:hover i:hover {
+#v-pills-home-tab:focus i:hover {
   color: #dd003f;
 }
 
@@ -9921,6 +9931,41 @@ header .carousel-indicators li {
   height: 10em;
 }
 
+.redCard {
+  background-color: #dc0041;
+  height: 20px;
+  width: 80%;
+  margin: -5%;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redCard span {
+  font-size: 25px;
+  color: white;
+}
+
+.imgCardBlog {
+  border-radius: 15px;
+  border: solid 5px lightgrey;
+  width: 90%;
+  height: 50%;
+}
+
+.card {
+  align-items: center;
+}
+
+.card-body {
+  margin-top: 20px;
+  padding: 1em 4em;
+}
+
 /* CLIENT */
 .client {
   background-image: url(../../../public/images/testimonials_background.jpg);
@@ -9964,6 +10009,12 @@ header .carousel-indicators li {
 }
 
 /* footer */
+.deco2 {
+  background-image: url(../../../public/images/footer_bottom_decoration_img.png);
+  background-color: black;
+  height: 10px;
+}
+
 .footer {
   padding-top: 2em;
   background-image: url(../../../public/images/team_background.jpg);

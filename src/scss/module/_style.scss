@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     font-family: 'Courgette', cursive;
     h2 span{
@@ -102,6 +106,11 @@ header {
   
 }
 
+.deco {
+    background-image: url(../../../public/images/bottom_decoration_img.png);
+    background-color: black;
+    height: 10px; 
+}
 /* menu */
 
 
@@ -132,7 +141,7 @@ header {
    
 }
 
-#v-pills-home-tab:hover {
+#v-pills-home-tab:focus {
     i:hover {
         color: #dd003f;
     }
@@ -242,6 +251,42 @@ header {
         height: 10em;
     }
 }
+
+.redCard { 
+    background-color: #dc0041;
+    height: 20px;
+    width: 80%;
+    margin: -5%;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        font-size: 25px;
+        color: white;
+    }
+}
+  
+.imgCardBlog {
+    border-radius: 15px;
+    border: solid 5px lightgrey;
+    width: 90%;
+    height: 50%;
+}
+
+.card {
+    align-items: center;
+}
+    
+.card-body {
+     margin-top: 20px;
+     padding: 1em 4em;
+}
+   
+
 /* CLIENT */
 
 
@@ -287,6 +332,12 @@ header {
 }
 
 /* footer */
+
+.deco2 {
+    background-image: url(../../../public/images/footer_bottom_decoration_img.png);
+    background-color: black;
+    height: 10px; 
+}
 
 .footer {
     padding-top: 2em;
