@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+    font-family: 'Courgette', cursive;
+    h2 span{
+        color: #dd003f;
+    }
+    h2 .colorW {
+        color: white;
+    }
+    p, a, h3, h5, h6 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
 #menu {
     background-image: url(../../../public/images/main_bg.jpg);
 }
@@ -5,6 +21,7 @@
 header {
     background-size: cover;
     height: 100vh;
+    
     
     .banner {
         filter: brightness(40%);
@@ -19,7 +36,73 @@ header {
         color: white;
         text-transform: uppercase;
     }
+    .sp1 {
+        font-size: 3em;
+    }
+    .sp2 {
+        font-size: 3em;
+        color: #dd003f;
+    }
+    .sp3 {
+        font-size: 2em;
+    }
+    .buttonsHeader {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+    .buttonsHeader button {
+          padding: 0.6em 4em;
+          margin:1em;
+          text-transform: uppercase;
+    }
+    
+    #brand {
+        margin-right: 0;
+    }
+
+    #brand:hover {
+        background-color: transparent;
+    }
+
+    nav a:hover {
+        background-color: #dd003f;
+        color: white;
+    }
+
+   
+    #nav .navbar-brand a:hover {
+        background-color: none;
+    }
+
+    #nav a {
+        padding: 1em;
+    }
+
+    #nav {
+        position: fixed;
+        top: 0;
+        z-index: 4;
+    }
+
+    .carousel-inner h1 {
+        padding-top: 4em;
+    }
+    #carouselExampleIndicators {
+        height: 100vh;
+    }
+    
+    .carousel-indicators li {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        box-shadow: 5px 10px;
+    }
+  
 }
+
+/* menu */
 
 
 #menu {
@@ -29,8 +112,71 @@ header {
     }
 }
 
+#v-pills-home-tab, #v-pills-profile-tab, #v-pills-messages-tab, #v-pills-settings-tab {
+    padding: 0em;
+    border-bottom: 1px solid lightgrey;
+    
+    p{
+        font-size: 1.5em;
+        text-align: center
+    }
+    i {
+        text-decoration: none;
+        color: lightgrey;
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 20px; 
+    }
+   
+}
+
+#v-pills-home-tab:hover {
+    i:hover {
+        color: #dd003f;
+    }
+    border-right: #dd003f 4px solid;
+} 
+
+#v-pills-profile-tab:hover {
+    i:hover {
+        color: #dd003f;
+    }
+    border-right: #dd003f 4px solid;
+}
+
+#v-pills-messages-tab:hover {
+    i:hover {
+        color: #dd003f;
+    }
+    border-right: #dd003f 4px solid;
+
+} 
+
+#v-pills-settings-tab:hover {
+    i:hover {
+        color: #dd003f;
+    }
+    border-right: #dd003f 4px solid;
+   
+}
+
 #menu {
     padding-top: 3em;
+}
+
+#menuCards {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px lightgrey dashed;
+}
+
+#menuCards img {
+    width: 30%;
+    height: 80%;
+    border-radius: 50%;
+    border: 5px lightgrey solid;
 }
 
 .menuTop {
@@ -75,6 +221,27 @@ header {
     }
 }
 
+/* OUR TABLE */
+
+.form {
+    background-image: url("../../../public/images/book_table_bg.jpg");
+    background-size: cover;
+    height: 70vh;
+    width: 90vh;
+    border-radius: 3%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#cardsTable {
+    display: flex;
+    justify-content: center;
+    .images {
+        width: 20em;
+        height: 10em;
+    }
+}
 /* CLIENT */
 
 
@@ -106,10 +273,47 @@ header {
 
 #ourContactCard {
     i, p {
+        display: flex;
+        justify-content: center;
        text-align: center; 
+       padding: 0.5em;
+    }
+    i {
+        font-size: 2em;
     }
     p {
         border-bottom: 1px solid white;
     }
+}
+
+/* footer */
+
+.footer {
+    padding-top: 2em;
+    background-image: url(../../../public/images/team_background.jpg);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    #imageFooter img{
+        width: 80px;
+        padding: 0.4em;
+    }
+
+    .iconsFooter  {
+        padding-left: 0;
+    }
+    .iconsFooter li{
+        display: inline-block;
+        padding: 0.4em 0.4em 0em 0.4em;
+        font-size: 2em;
+    }
+
+    .iconsFooter li:hover {
+        color: #dd003f;
+    }
+}
+
+.footer2 {
+    height: 90px;
+    background-color: #dd003f;
 }
 

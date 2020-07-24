@@ -4,6 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9665,6 +9666,22 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+body {
+  font-family: 'Courgette', cursive;
+}
+
+body h2 span {
+  color: #dd003f;
+}
+
+body h2 .colorW {
+  color: white;
+}
+
+body p, body a, body h3, body h5, body h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #menu {
   background-image: url(../../../public/images/main_bg.jpg);
 }
@@ -9690,6 +9707,75 @@ header a {
   text-transform: uppercase;
 }
 
+header .sp1 {
+  font-size: 3em;
+}
+
+header .sp2 {
+  font-size: 3em;
+  color: #dd003f;
+}
+
+header .sp3 {
+  font-size: 2em;
+}
+
+header .buttonsHeader {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+header .buttonsHeader button {
+  padding: 0.6em 4em;
+  margin: 1em;
+  text-transform: uppercase;
+}
+
+header #brand {
+  margin-right: 0;
+}
+
+header #brand:hover {
+  background-color: transparent;
+}
+
+header nav a:hover {
+  background-color: #dd003f;
+  color: white;
+}
+
+header #nav .navbar-brand a:hover {
+  background-color: none;
+}
+
+header #nav a {
+  padding: 1em;
+}
+
+header #nav {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+}
+
+header .carousel-inner h1 {
+  padding-top: 4em;
+}
+
+header #carouselExampleIndicators {
+  height: 100vh;
+}
+
+header .carousel-indicators li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  box-shadow: 5px 10px;
+}
+
+/* menu */
 #menu {
   background-image: url(../../../public/images/main_bg.jpg);
 }
@@ -9698,8 +9784,73 @@ header a {
   background-color: white;
 }
 
+#v-pills-home-tab, #v-pills-profile-tab, #v-pills-messages-tab, #v-pills-settings-tab {
+  padding: 0em;
+  border-bottom: 1px solid lightgrey;
+}
+
+#v-pills-home-tab p, #v-pills-profile-tab p, #v-pills-messages-tab p, #v-pills-settings-tab p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#v-pills-home-tab i, #v-pills-profile-tab i, #v-pills-messages-tab i, #v-pills-settings-tab i {
+  text-decoration: none;
+  color: lightgrey;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#v-pills-home-tab:hover {
+  border-right: #dd003f 4px solid;
+}
+
+#v-pills-home-tab:hover i:hover {
+  color: #dd003f;
+}
+
+#v-pills-profile-tab:hover {
+  border-right: #dd003f 4px solid;
+}
+
+#v-pills-profile-tab:hover i:hover {
+  color: #dd003f;
+}
+
+#v-pills-messages-tab:hover {
+  border-right: #dd003f 4px solid;
+}
+
+#v-pills-messages-tab:hover i:hover {
+  color: #dd003f;
+}
+
+#v-pills-settings-tab:hover {
+  border-right: #dd003f 4px solid;
+}
+
+#v-pills-settings-tab:hover i:hover {
+  color: #dd003f;
+}
+
 #menu {
   padding-top: 3em;
+}
+
+#menuCards {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px lightgrey dashed;
+}
+
+#menuCards img {
+  width: 30%;
+  height: 80%;
+  border-radius: 50%;
+  border: 5px lightgrey solid;
 }
 
 .menuTop {
@@ -9748,6 +9899,28 @@ header a {
   color: white;
 }
 
+/* OUR TABLE */
+.form {
+  background-image: url("../../../public/images/book_table_bg.jpg");
+  background-size: cover;
+  height: 70vh;
+  width: 90vh;
+  border-radius: 3%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#cardsTable {
+  display: flex;
+  justify-content: center;
+}
+
+#cardsTable .images {
+  width: 20em;
+  height: 10em;
+}
+
 /* CLIENT */
 .client {
   background-image: url(../../../public/images/testimonials_background.jpg);
@@ -9776,9 +9949,48 @@ header a {
 }
 
 #ourContactCard i, #ourContactCard p {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  padding: 0.5em;
+}
+
+#ourContactCard i {
+  font-size: 2em;
 }
 
 #ourContactCard p {
   border-bottom: 1px solid white;
+}
+
+/* footer */
+.footer {
+  padding-top: 2em;
+  background-image: url(../../../public/images/team_background.jpg);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer #imageFooter img {
+  width: 80px;
+  padding: 0.4em;
+}
+
+.footer .iconsFooter {
+  padding-left: 0;
+}
+
+.footer .iconsFooter li {
+  display: inline-block;
+  padding: 0.4em 0.4em 0em 0.4em;
+  font-size: 2em;
+}
+
+.footer .iconsFooter li:hover {
+  color: #dd003f;
+}
+
+.footer2 {
+  height: 90px;
+  background-color: #dd003f;
 }
